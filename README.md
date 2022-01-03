@@ -8,6 +8,8 @@ Foram utilizados:
 - PHP
 - MySQL
 
+Não foi utilizado nenhuma biblioteca ou framework!
+
 Segue imagens:
 ![Alt Text](front-end/img/screenshots/Cadastro.png?raw=true "Cadastro de venda")
 ![Alt Text](front-end/img/screenshots/Listagem.png?raw=true "Listagem de vendas")
