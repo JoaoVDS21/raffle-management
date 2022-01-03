@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box-form">
+            <h1>RIFA JOVENS IBF</h1>
+            <form action="#" method="POST" enctype="multipart/form-data" id="formRifa">
+                <div class="input-group" id="groupNumRifa">
+                    <label for="numRifa">Selecione a rifa:</label>
+                    <select name="numRifa" id="numRifa">
+                        <option value="1">01 - Azul</option>
+                        <option value="2">02 - Rosa</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="vendedor">Vendedor:</label>
+                    <select name="vendedor" id="vendedor">
+                        <option value="default">Selecione o vendedor:</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="nomeComprador">Nome do comprador:</label>
+                    <input type="text" name="nomeComprador" id="nomeComprador" required>
+                </div>
+                <div class="input-group">
+                    <label for="nomeEscolhido">Nome escolhido:</label>
+                    <input type="text" name="nomeEscolhido" id="nomeEscolhido" required>
+                </div>
+                <p id="textAlert"></p>
+
+                <input type="submit" value="Cadastrar">
+            </form>
+            <a href="painel.html">Entrar no painel</a>
+        </div>
+        
+    </div>
+
+    <script src="js/ajax.js"></script>
+    <script src="js/venda.js"></script>
+</body>
+</html>

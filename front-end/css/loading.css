@@ -1,0 +1,38 @@
+.loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+    transition: .5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: all;
+}
+
+.loading.hide{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.loading::after{
+    content: '';
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border-top: 3px solid rgb(21, 0, 99);
+    border-right: 3px solid rgb(187, 169, 255);
+    border-bottom: 3px solid rgb(187, 169, 255);
+    border-left: 3px solid rgb(187, 169, 255);
+    animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+    to{
+        transform: rotate(360deg);
+    }
+}

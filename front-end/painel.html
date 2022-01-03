@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/loading.css">
+</head>
+<body>
+    <div class="loading"></div>
+    <div class="container" id="painel">
+        <div class="box-functions">
+        <a href="index.html"><i class="fas fa-chevron-left"></i>Voltar</a>
+            <div class="input-group" id="groupNumRifa">
+                <label for="numRifa">Selecione a rifa:</label>
+                <select name="numRifa" id="numRifa">
+                    <option value="1">01 - Azul</option>
+                    <option value="2">02 - Rosa</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="vendedor">Vendedor:</label>
+                <select name="vendedor" id="vendedor" >
+                    <option value="todos">Todos</option>
+                </select>
+            </div>
+            <div class="info-money">
+                <p>Desta rifa (R$): <span id="destaRifa"></span></p>
+                <p>De todas rifas (R$): <span id="valorTotal"></span></p>
+                <p style="display: none">Deste vendedor (R$): <span id="vendedorAtual"></span></p>
+            </div>
+        </div>
+        <table>
+            <thead>
+                <td>ID</td>
+                <td>Vendedor</td>
+                <td>Comprador</td>
+                <td>Nome</td>
+                <td>Ações</td>
+            </thead>
+            <tbody id="box-rifas">
+
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src="js/ajax.js"></script>
+    <script src="js/venda.js"></script>
+    <script src="js/loading.js"></script>
+
+</body>
+</html>
